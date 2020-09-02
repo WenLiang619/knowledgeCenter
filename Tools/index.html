@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue项目在本地开发过程中如何让外部客户访问 | 全栈之路</title>
+    <meta name="description" content="Just playing around 哈哈">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/knowledgeCenter/assets/css/0.styles.1dcd2263.css" as="style"><link rel="preload" href="/knowledgeCenter/assets/js/app.1ab2220c.js" as="script"><link rel="preload" href="/knowledgeCenter/assets/js/2.c22acdc0.js" as="script"><link rel="preload" href="/knowledgeCenter/assets/js/13.62af346f.js" as="script"><link rel="prefetch" href="/knowledgeCenter/assets/js/10.66b47ef8.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/11.5cef6782.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/12.666ec1c1.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/14.1eef55e0.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/15.30888e6b.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/3.1416db54.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/4.202d41bd.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/5.b12e5645.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/6.add9ba08.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/7.52f7c79a.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/8.519cb49d.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/9.413ad37c.js">
+    <link rel="stylesheet" href="/knowledgeCenter/assets/css/0.styles.1dcd2263.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/knowledgeCenter/" class="home-link router-link-active"><!----> <span class="site-name">全栈之路</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/knowledgeCenter/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Baidu
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/knowledgeCenter/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Baidu
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/knowledgeCenter/" class="sidebar-link">My_Home</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS_basic</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS_Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Tools</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/knowledgeCenter/Tools/" class="active sidebar-link">FRP</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/knowledgeCenter/Tools/#vue项目在本地开发过程中如何让外部客户访问" class="sidebar-link">Vue项目在本地开发过程中如何让外部客户访问</a></li><li class="sidebar-sub-header"><a href="/knowledgeCenter/Tools/#场景" class="sidebar-link">场景</a></li><li class="sidebar-sub-header"><a href="/knowledgeCenter/Tools/#配置" class="sidebar-link">配置</a></li></ul></li><li><a href="/knowledgeCenter/Tools/git.html" class="sidebar-link">git</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Resume</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="vue项目在本地开发过程中如何让外部客户访问"><a href="#vue项目在本地开发过程中如何让外部客户访问" class="header-anchor">#</a> Vue项目在本地开发过程中如何让外部客户访问</h2> <p>使用FRP将本地（localhost）上正在开发的前端和后端服务穿透到阿里云服务器上
+使得外部客户可以通过阿里云代理而访问本地机器上的服务</p> <h2 id="场景"><a href="#场景" class="header-anchor">#</a> 场景</h2> <p>Vue前端项目运行在本地端口3000，Express后端运行在本地端口5000
+有一阿里云linux服务器，域名mlskd.cn</p> <h2 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h2> <ol><li><p>到https://github.com/fatedier/frp/releases下载阿里云服务端用的软件frp_0.32.1_linuf'rx_amd64.tar.gz以及客户端win10(本地电脑)用的软件frp_0.32.1_windows_amd64.zip</p></li> <li><p>阿里云服务器端的配置</p> <p>2.1 解压frp_0.32.1_linux_amd64.tar.gz后只需要保留frps.exe和frps.ini,将这两个文件放到linux服务器上某一文件夹下并对frps.ini做下面的配置frps.ini</p> <div class="language- extra-class"><pre><code> [common]
+ bind_port = 7000
+ dashboard_port = 7500
+ token = wenliang
+ dashboard_user = admin
+ dashboard_pwd = admin
+ vhost_http_port = 8080
+ vhost_https_port = 10443
+ 
+ [web]
+ type = http
+ auth_token = wenliang
+</code></pre></div><p>2.2 在frps.exe和frps.ini所在文件夹下执行 './fprs -c frps.ini' 命令</p></li> <li><p>本地电脑端（客户端）的配置</p> <p>3.1 解压frp_0.32.1_windows_amd64.zip后只需要保留frpc.exe和frpc.ini文件，将这两个文件放到本地电脑上某一文件夹下并对frpc.ini做下面的配置</p> <div class="language- extra-class"><pre><code> [common]
+ server_addr = 39.100.99.20
+ server_port = 7000
+ token = wenliang
+ 
+ [web]
+ type = http
+ local_port = 3000
+ custom_domains = mlskd.cn
+      
+ [web2]
+ type = http
+ local_port = 5000
+ custom_domains = b.mlskd.cn
+</code></pre></div><p>3.2 在frpc.exe和frpc.ini所在文件夹下打开windows CMD窗口，执行 './frpc -c frpc.ini' 命令</p></li></ol> <p>经过上面步骤，用户访问mlskd.cn:8080 就可以访问到本地windows电脑上3000端口上的服务。访问localhost:7500可以看到frp管理页面。</p> <p>几点注意事项：</p> <ul><li><p>因为Vue项目是前后端分离的，本地3000端口上是前端服务，后端服务是在5000上，因此在frpc.ini里配置了[web2]，即前端代码中如果要请求后端就必须设置请求路径为b.mlskd.cn:8080。</p></li> <li><p>前后端代码只需要将本地服务配置成localhost即可，前端main.js中配置vue_resource的请求根路径的时候需要配置成'<a href="http://b.mlskd.cn:8080'%E3%80%82" target="_blank" rel="noopener noreferrer">http://b.mlskd.cn:8080'。<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>webpack.config.js的devServer中增加配置项 'disableHostCheck: true'</p></li> <li><p>在linux中 用ps查看 frps进程号，用'kill -s 9 【进程PID】' 可以杀死进程</p></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/knowledgeCenter/JS_Vue/JS_Vue2.html" class="prev">
+        JS_Vue2
+      </a></span> <span class="next"><a href="/knowledgeCenter/Tools/git.html">
+        git
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/knowledgeCenter/assets/js/app.1ab2220c.js" defer></script><script src="/knowledgeCenter/assets/js/2.c22acdc0.js" defer></script><script src="/knowledgeCenter/assets/js/13.62af346f.js" defer></script>
+  </body>
+</html>

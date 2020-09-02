@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>js中的预解析 | 全栈之路</title>
+    <meta name="description" content="Just playing around 哈哈">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/knowledgeCenter/assets/css/0.styles.1dcd2263.css" as="style"><link rel="preload" href="/knowledgeCenter/assets/js/app.1ab2220c.js" as="script"><link rel="preload" href="/knowledgeCenter/assets/js/2.c22acdc0.js" as="script"><link rel="preload" href="/knowledgeCenter/assets/js/10.66b47ef8.js" as="script"><link rel="prefetch" href="/knowledgeCenter/assets/js/11.5cef6782.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/12.666ec1c1.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/13.62af346f.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/14.1eef55e0.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/15.30888e6b.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/3.1416db54.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/4.202d41bd.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/5.b12e5645.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/6.add9ba08.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/7.52f7c79a.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/8.519cb49d.js"><link rel="prefetch" href="/knowledgeCenter/assets/js/9.413ad37c.js">
+    <link rel="stylesheet" href="/knowledgeCenter/assets/css/0.styles.1dcd2263.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/knowledgeCenter/" class="home-link router-link-active"><!----> <span class="site-name">全栈之路</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/knowledgeCenter/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Baidu
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/knowledgeCenter/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Baidu
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/knowledgeCenter/" class="sidebar-link">My_Home</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JS_basic</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/knowledgeCenter/JS_basic/" class="active sidebar-link">易错知识点</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/knowledgeCenter/JS_basic/#js中的预解析" class="sidebar-link">js中的预解析</a></li></ul></li><li><a href="/knowledgeCenter/JS_basic/JS_basic1.html" class="sidebar-link">JS_basic1</a></li><li><a href="/knowledgeCenter/JS_basic/JS_basic2.html" class="sidebar-link">JS_basic2</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS_Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Tools</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Resume</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="js中的预解析"><a href="#js中的预解析" class="header-anchor">#</a> js中的预解析</h2> <ol><li><p>变量申明提前了</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token comment">//输出 undefined, 变量的申明提前到了当前所在作用域的最上面，变量申明未赋值就是undefined</span>
+  <span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">10</span>
+</code></pre></div></li> <li><p>函数的申明也会提前</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//输出hello</span>
+
+  <span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>   <span class="token comment">// 申明提前到当前所在作用域的最上面</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>例子1</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+ <span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">20</span>
+
+ <span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token comment">// 输出undefined, 是函数作用域内的num变量的申明提前了</span>
+   <span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">10</span>
+ <span class="token punctuation">}</span>
+</code></pre></div><p>例子2</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+ <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//函数调用的时候会把函数声明提前到作用域上面</span>
+ <span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">20</span><span class="token comment">//声明会被提前到使用之前</span>
+
+ <span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token comment">//  还是输出undefined 仔细体会函数与num的预解析</span>
+   <span class="token comment">// var num = 10</span>
+ <span class="token punctuation">}</span>
+</code></pre></div><p>上面代码预解析后</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token keyword">var</span> num
+ <span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token comment">//  输出undefined</span>
+   <span class="token comment">// var num = 10</span>
+ <span class="token punctuation">}</span>
+
+ <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+ num <span class="token operator">=</span> <span class="token number">20</span>
+
+</code></pre></div></li> <li><p>例子</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token comment">//undefined</span>
+      <span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token comment">//报错</span>
+</code></pre></div></li></ol> <ul><li>javascript解析器执行javascript代码的时候分为两个过程预解析过程和执行过程
+<ul><li>预解析过程：
+<ul><li>把变量的声明提升到当前作用域的最前面，只提升申明不提升赋值</li> <li>把函数的声明提升到当前作用域的最前面，只提升声明不提升调用</li> <li>先提升变量再提升function</li></ul></li></ul></li></ul> <ol start="5"><li><p>例子</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">25</span>
+
+    <span class="token keyword">function</span> <span class="token function">abc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">alert</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//undefined</span>
+      <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">abc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">// 25</span>
+
+</code></pre></div></li> <li><p>例子</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//函数体</span>
+
+  <span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'aaa'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//1</span>
+</code></pre></div><p>上面代码预解析后</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+  <span class="token keyword">var</span> a
+
+  <span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'aaa'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//函数体,命名函数 重新给a赋值了</span>
+  a <span class="token operator">=</span> <span class="token number">1</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//1</span>
+</code></pre></div><p>注意下面的例子</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//undefined</span>
+
+  <span class="token keyword">var</span> <span class="token function-variable function">m</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'aaa'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//undefined</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span> <span class="token comment">//函数体</span>
+  <span class="token function">m</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 输出 aaa</span>
+  <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//1</span>
+
+</code></pre></div><p>上面代码预解析后</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  
+  <span class="token keyword">var</span> a
+  <span class="token keyword">var</span> m
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//undefined</span>
+
+  <span class="token function-variable function">m</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'aaa'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//undefined</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span> <span class="token comment">//函数体</span>
+  <span class="token function">m</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//aaa</span>
+  a <span class="token operator">=</span> <span class="token number">1</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//1</span>
+
+</code></pre></div></li> <li><p>例子</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+  <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">18</span>
+  <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">9</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">// undefined</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token comment">//9</span>
+    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">'123'</span>
+  <span class="token punctuation">}</span>
+
+</code></pre></div><p>上面代码解析后</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+  <span class="token keyword">var</span> a
+  a <span class="token operator">=</span> <span class="token number">18</span>
+
+  <span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> b
+    <span class="token keyword">var</span> a
+    b <span class="token operator">=</span> <span class="token number">9</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//undefined</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token comment">//9</span>
+    a <span class="token operator">=</span> <span class="token string">'123'</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre></div></li> <li><p>例子</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token comment">//9</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token comment">//9</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//报错</span>
+
+<span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> a <span class="token operator">=</span> b <span class="token operator">=</span> c <span class="token operator">=</span> <span class="token number">9</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//9</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token comment">//9</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token comment">//9</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>上面代码解析后</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+  <span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> a
+    a <span class="token operator">=</span> <span class="token number">9</span> <span class="token comment">//局部变量</span>
+    b <span class="token operator">=</span> <span class="token number">9</span> <span class="token comment">//隐式全局</span>
+    c <span class="token operator">=</span> <span class="token number">9</span> <span class="token comment">//隐式全局</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//9</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token comment">//9</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token comment">//9</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token comment">//9</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token comment">//9</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//报错</span>
+
+
+</code></pre></div></li> <li><p>例子</p></li></ol> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// f1不是一个函数 报错</span>
+
+  <span class="token keyword">var</span> <span class="token function-variable function">f1</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span>
+
+
+</code></pre></div><p>上面预解析后</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">var</span> f1
+  <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// f1不是一个函数 报错</span>
+  <span class="token function-variable function">f1</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span>
+
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/knowledgeCenter/" class="prev router-link-active">
+        My_Home
+      </a></span> <span class="next"><a href="/knowledgeCenter/JS_basic/JS_basic1.html">
+        JS_basic1
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/knowledgeCenter/assets/js/app.1ab2220c.js" defer></script><script src="/knowledgeCenter/assets/js/2.c22acdc0.js" defer></script><script src="/knowledgeCenter/assets/js/10.66b47ef8.js" defer></script>
+  </body>
+</html>
